@@ -1,0 +1,12 @@
+h1 {
+  color: orange
+}
+
+h2 {
+  color: green
+}
+
+h1, h2, p {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
