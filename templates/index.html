@@ -2,6 +2,22 @@
  
 {% block content %}
 
-<h2>Test</h2>
+<h2>To Dos</h2>
+
+<div id="todo_list">
+{% for todo in todos %}
+<li>{{todo}}</li>
+{% endfor %}
+</div>
+<form method="POST">
+  {{ template_form.hidden_tag() }}
+  <p>
+    {{ template_form.todo.label }}
+    {{ template_form.todo() }}
+  </p>
+  <p>
+    {{ template_form.submit() }}
+  </p>
+</form>
 
 {% endblock %}
